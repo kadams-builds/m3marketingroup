@@ -1,0 +1,6 @@
+/* Column
+--------------------------------------------- */
+
+.wp-block-column.is-style-box-shadow {
+	box-shadow: var(--wp--preset--shadow--drop);
+}

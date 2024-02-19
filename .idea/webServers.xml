@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="76149264-0c79-4729-aee0-25e4119d78a4" name="m3marketingroup">
+        <fileTransfer rootFolder="/home/customer" accessType="SFTP" host="ssh.leos29.sg-host.com" port="18765" sshConfigId="a9ab8f33-53c4-449f-9520-bda7aba17ae5" sshConfig="u2820-nvdcunrj0ujl@ssh.leos29.sg-host.com:18765 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

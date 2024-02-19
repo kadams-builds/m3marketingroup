@@ -1,0 +1,25 @@
+/* Quote
+--------------------------------------------- */
+
+.wp-block-quote {
+	border-color: var(--wp--preset--color--primary);
+}
+
+.wp-block-quote p {
+	font-weight: var(--wp--custom--font-weight--regular)
+}
+
+.wp-block-quote.has-text-align-center,
+.wp-block-quote.has-text-align-left,
+.wp-block-quote.has-text-align-right {
+	padding: var(--wp--preset--spacing--normal);
+}
+
+.wp-block-quote p:last-of-type {
+	margin-bottom: var(--wp--preset--spacing--normal);
+}
+
+.wp-block-quote cite,
+.wp-block-pullquote cite {
+	display: block;
+}

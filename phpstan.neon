@@ -1,0 +1,25 @@
+includes:
+  - vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+  level: 9
+  scanFiles:
+    - vendor/php-stubs/wp-cli-stubs/wp-cli-stubs.php
+  ignoreErrors:
+    - '#Class WC_Cart not found#'
+    - '#Class WC_Product not found#'
+    - '#Instantiated class WC_Order not found#'
+    - '#Access to property \$status on an unknown class WC_Order#'
+    - '#Function wc_get_order not found#'
+    - '#Function WC not found#'
+    - '#Function wc_price not found#'
+    - '#Function wc_add_notice not found#'
+    - '#Function wc_get_products not found#'
+    - '#Function wc_get_cart_remove_url not found#'
+    - '#Function wc_get_checkout_url not found\.#'
+    - '#Call to method get_cart\(\) on an unknown class WC_Cart\.#'
+    - '#Call to method get_name\(\) on an unknown class WC_Product\.#'
+    - '#Call to method get_price\(\) on an unknown class WC_Product\.#'
+    - '#Call to method add_meta_data\(\) on an unknown class WC_Order_Item.#'
+    - '#^Parameter \$(item|order) of method ContentVeggie\\App\\Third_Party\\Woocommerce\\Target_URL::add_to_order_item_meta\(\) has invalid type WC_(Order_Item|Order)\.$#'
+  paths:
+    - app

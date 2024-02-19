@@ -1,0 +1,40 @@
+/* Categories
+--------------------------------------------- */
+
+.wp-block-post-terms .wp-block-post-terms__prefix,
+.wp-block-post-terms .wp-block-post-terms__suffix {
+	font-size: var(--wp--preset--font-size--x-small);
+}
+
+.is-style-term-badges a {
+	padding: .25em .75em;
+	border-radius: 10em;
+	color: var(--wp--preset--color--white) !important;
+	background-color: var(--wp--preset--color--base);
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+.is-style-term-badges {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--wp--preset--spacing--x-small);
+}
+
+.is-style-term-badges .wp-block-post-terms__separator {
+	display: none;
+}
+
+.single .taxonomy-post_tag.is-style-term-badges {
+	display: flex;
+	gap: var(--wp--preset--spacing--small);
+}
+
+.single .taxonomy-post_tag.is-style-term-badges .wp-block-post-terms__separator {
+	display: none;
+}
+
+.single .post-meta:empty {
+	display: none;
+}

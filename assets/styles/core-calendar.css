@@ -1,0 +1,59 @@
+/* Calendar
+--------------------------------------------- */
+
+.wp-block-calendar table caption {
+	font-weight: var(--wp--custom--font-weight--medium);
+	margin-bottom: var(--wp--preset--spacing--x-small);
+	text-align: center;
+}
+
+.wp-block-calendar table caption,
+.wp-block-calendar table tbody {
+	color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-calendar table {
+	border: 1px solid var(--wp--preset--color--dark-10);
+}
+
+.wp-block-calendar table th {
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--base);
+	font-weight: var(--wp--custom--font-weight--medium);
+	padding: .75rem;
+	border-color: var(--wp--preset--color--dark-10);
+}
+
+.wp-block-calendar .pad {
+	background-color: var(--wp--preset--color--dark-05);
+}
+
+.wp-block-calendar tbody td {
+	border: 1px solid var(--wp--preset--color--dark-10);
+	padding: .5rem;
+}
+
+.wp-block-calendar td a {
+	color: var(--wp--preset--color--contrast);
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 10em;
+	padding: .25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wp-block-calendar [id="today"] {
+	color: var(--wp--preset--color--base);
+	background-color: var(--wp--preset--color--secondary);
+}
+
+.wp-block-calendar nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--wp--preset--color--dark-05);
+	border: 1px solid var(--wp--preset--color--dark-10);
+	padding-left: .5rem;
+	padding-right: .5rem;
+}

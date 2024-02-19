@@ -1,0 +1,33 @@
+/* Post Author
+--------------------------------------------- */
+
+.wp-block-post-author__byline {
+	font-size: var(--wp--preset--font-size--xx-small);
+}
+
+.wp-block-post-author__bio {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.wp-block-post-author {
+	align-items: center;
+}
+
+.wp-block-post-author__name {
+	margin-bottom: 0;
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+.wp-block-post-author__avatar {
+	display: inline-flex;
+	align-items: center;
+	margin-right: var(--wp--preset--spacing--x-small);
+}
+
+.wp-block-post-author__avatar img {
+	border-radius: 10em;
+	border-color: var(--wp--preset--color--dark-10);
+	border-width: 1px;
+	border-style: solid;
+}

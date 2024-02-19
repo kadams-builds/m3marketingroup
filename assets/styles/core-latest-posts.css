@@ -1,0 +1,9 @@
+.wp-block-latest-posts__list li {
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	text-transform: capitalize;
+}
+
+.wp-block-latest-posts__list li time {
+	opacity: 0.36;
+}

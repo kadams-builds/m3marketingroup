@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+// ---------------------------------------------------------------------------------------------------------------------
+// base / reset
+// ---------------------------------------------------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  min-height: 100svh;
+  line-height: 1.5;
+}
+
+body, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  text-wrap: balance;
+}
+
+a {
+	text-underline-offset: 0.25em;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 16em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+caption {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	text-align: left;
+	caption-side: bottom;
+}
+
+abbr[title],
+abbr[data-original-title] {
+	text-decoration: underline;
+	text-decoration: underline dotted;
+	cursor: help;
+	border-bottom: 0;
+}

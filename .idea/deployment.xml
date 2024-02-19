@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="m3marketingroup" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="m3marketingroup">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/www/leos29.sg-host.com/public_html/wp-content/themes/m3marketingroup" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

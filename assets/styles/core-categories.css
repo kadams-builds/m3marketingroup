@@ -1,0 +1,16 @@
+/* Categories
+--------------------------------------------- */
+
+.wp-block-categories-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-categories-list li {
+	display: flex;
+	justify-content: space-between;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	text-transform: capitalize;
+}

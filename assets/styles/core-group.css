@@ -1,0 +1,18 @@
+.is-style-sticky-top,
+.is-style-sticky-bottom {
+	position: sticky;
+	z-index: 1;
+}
+
+.is-style-sticky-top {
+	top: var(--wp--preset--spacing--normal);
+}
+
+.is-style-sticky-bottom {
+	bottom: 0;
+}
+
+.wp-block-group.is-style-box-shadow {
+	box-shadow: var(--wp--preset--shadow--outline-shadow), 0 0 0 1px var(--wp--preset--color--dark-05);
+	overflow: hidden;
+}

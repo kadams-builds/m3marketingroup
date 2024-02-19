@@ -1,0 +1,47 @@
+.wp-block-table table {
+	border-collapse: collapse;
+	border: 1px solid var(--wp--preset--color--dark-10);
+}
+
+.wp-block-table th {
+	text-align: left;
+	color: var(--wp--preset--color--white);
+	background-color: var(--wp--preset--color--secondary);
+	vertical-align: bottom;
+	border-bottom: 2px solid var(--wp--preset--color--dark-10);
+	white-space: nowrap;
+}
+
+.wp-block-table td:first-child {
+	background-color: var(--wp--preset--color--secondary-muted);
+}
+
+.wp-block-table th,
+.wp-block-table td {
+	padding: var(--wp--preset--spacing--xx-small);
+	vertical-align: top;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: var(--wp--preset--color--dark-10);
+}
+
+.wp-block-table td {
+	background-color: var(--wp--preset--color--light-50);
+}
+
+.wp-block-table tfoot {
+	border-top: 2px solid var(--wp--preset--color--dark-10);
+}
+
+.wp-block-table figcaption {
+	margin-top: var(--wp--preset--spacing--x-small);
+}
+
+.is-style-striped tbody tr:nth-child(odd) {
+	background-color: var(--wp--preset--color--dark-10);
+}
+
+.is-style-bordered th, .is-style-bordered td {
+	border: 1px solid var(--wp--preset--color--dark-10);
+}
+

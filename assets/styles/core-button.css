@@ -1,0 +1,29 @@
+/* Button - Outline Style
+--------------------------------------------- */
+
+.wp-block-button__link {
+	display: flex;
+	justify-content: center;
+}
+
+.wp-block-button .wp-block-button__link {
+	box-shadow: var(--wp--preset--shadow--drop);
+}
+
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus {
+	box-shadow: var(--wp--preset--shadow--drop-hover);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	border: none;
+	background-color: transparent;
+	box-shadow: var(--wp--preset--shadow--drop);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:focus {
+	color: var(--wp--preset--color--white);
+	background-color: var(--wp--preset--color--base);
+	box-shadow: var(--wp--preset--shadow--drop-hover);
+}

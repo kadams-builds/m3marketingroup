@@ -1,0 +1,45 @@
+{
+	"name": "m3marketingroup",
+	"private": true,
+	"version": "0.0.1",
+	"description": "WordPress Theme",
+	"author": "Karl Adams",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"theme"
+	],
+	"homepage": "https://github.com/kadams-builds/m3marketingroup",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kadams-builds/m3marketingroup.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kadams-builds/m3marketingroup/issues"
+	},
+	"devDependencies": {
+		"@wordpress/base-styles": "^4.35.0",
+		"@wordpress/browserslist-config": "^5.27.0",
+		"@wordpress/stylelint-config": "^21.27.0",
+		"stylelint": "^14.10.0",
+		"autoprefixer": "^10.4.16",
+		"chokidar-cli": "^3.0.0",
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0",
+		"sass": "^1.69.4",
+		"browserify": "^17.0.0"
+	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	],
+	"scripts": {
+		"start": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
+		"build-m3marketingroup": "npm run build:public",
+		"build:public": "sass src/scss/public.scss style.css --style=expanded --load-path node_modules && postcss style.css --use autoprefixer --output style.css --map",
+		"watch": "sass --watch src/scss/public.scss:style.css --style=expanded --load-path node_modules && postcss style.css --use autoprefixer --output style.css --map",
+		"lint:css": "stylelint **/*.css -i .gitignore",
+		"lint:css:fix": "stylelint **/*.css -i .gitignore --fix",
+		"lint:php": "./vendor/bin/phpcs",
+		"lint:php:fix": "./bin/phpcbf.sh"
+	}
+}

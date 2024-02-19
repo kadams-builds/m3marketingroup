@@ -1,0 +1,133 @@
+/* List
+--------------------------------------------- */
+
+ul:not([class]) li::marker {
+	color: var(--wp--preset--color--secondary);
+	font-size: 1.25em;
+}
+
+ul li,
+ol li {
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+}
+
+ol:not([class]) li::marker {
+	font-size: .875em;
+}
+
+.is-style-list-none {
+	padding-inline-start: 0;
+}
+
+.is-style-list-none li {
+	margin-block-end: .375em;
+}
+
+.is-style-list-none ul,
+.is-style-list-none ol {
+	list-style: none;
+}
+
+[class*="is-style-list"] {
+	list-style: none;
+}
+
+[class*="is-style-list"]:not(.is-style-list-none) {
+	padding-inline-start: var(--wp--preset--spacing--x-small);
+}
+
+[class*="is-style-list"]:not(.is-style-list-none) > li {
+	position: relative;
+	padding-inline-start: var(--wp--preset--spacing--medium);
+	margin-block-end: .5em;
+}
+
+[class*="is-style-list"] > li::before {
+	position: absolute;
+	top: 0.125rem;
+	left: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	line-height: 1;
+}
+
+.is-style-list-arrow-circle > li::before,
+.is-style-list-numeric > li::before {
+	color: var(--wp--preset--color--base);
+	background-color: var(--wp--preset--color--secondary);
+}
+
+.is-style-list-arrow-circle > li::before,
+.is-style-list-check > li::before,
+.is-style-list-cons > li::before,
+.is-style-list-numeric > li::before,
+.is-style-list-pros > li::before,
+.is-style-list-stars > li::before {
+	border-radius: 10em;
+	width: 1.25rem;
+	height: 1.25rem;
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+.is-style-list-arrow-circle > li::before,
+.is-style-list-check > li::before,
+.is-style-list-cons > li::before,
+.is-style-list-pros > li::before,
+.is-style-list-numeric > li::before {
+	font-size: 0.875rem;
+	color: var(--wp--preset--color--base);
+	margin-inline-end: var(--wp--preset--spacing--xx-small);
+}
+
+.is-style-list-arrow > li::before,
+.is-style-list-stars > li::before {
+	margin-inline-end: var(--wp--preset--spacing--xx-small);
+}
+
+.is-style-list-arrow li::before,
+.is-style-list-arrow-circle li::before {
+	content: "→";
+}
+
+.is-style-list-arrow-circle > li::before {
+	background-color: var(--wp--preset--color--info);
+}
+
+.is-style-list-check > li::before {
+	content: '✓';
+	color: var(--wp--preset--color--white);
+	background-color: var(--wp--preset--color--secondary);
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+.is-style-list-cons > li::before {
+	content: '-';
+	background-color: var(--wp--preset--color--error);
+}
+
+.is-style-list-numeric {
+	counter-reset: li;
+}
+
+.is-style-list-numeric li {
+	counter-increment: li;
+}
+
+.is-style-list-numeric > li::before {
+	content: counter(list-item);
+
+}
+
+.is-style-list-pros > li::before {
+	content: '+';
+	background-color: var(--wp--preset--color--success);
+}
+
+.is-style-list-stars > li::before {
+	content: '★';
+	font-size: 1.25em;
+	color: var(--wp--preset--color--primary);
+}
